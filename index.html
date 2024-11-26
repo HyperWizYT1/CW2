@@ -10,8 +10,8 @@
         <script src="jquery/jquery-3.7.1.min.js"></script>
     </head>
 
-    <body>
-        <!-- Navbar (start) -->
+    <body data-bs-theme="dark">
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Bank</a>
@@ -21,7 +21,7 @@
                 </button>
                 
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 text-center">
                         <li class="nav-item">
                             <a class="nav-link" href="pages/about_us.html">About Us</a>
                         </li>
@@ -33,12 +33,64 @@
                         <li class="nav-item">
                             <a class="nav-link" href="pages/contact_us.html">Contact Us</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/faq.html">FAQ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/services.html">Services</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Navbar (end) -->
+        <!-- End of navbar -->
 
-        <!-- Body of page-->
-</body>
+        <!-- Page body -->
+        <div class="container-fluid">
+            
+            <!-- Hero -->
+            <div class="container-fluid">
+                <img src="sources/hero-image.jpg" class="img-fluid rounded p-xl-4">
+            </div>
+            
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    
+                    <!-- Left card (Mortgage Calculator) -->
+                    <div class="col">
+                        <div class="card text-center">
+                            
+                            <div class="card-header text-center">
+                                Mortgage Calculator
+                            </div>
+
+                            <div class="card-body">
+                                <p class="card-text">Check out our mortgage calculator tool by clicking the button below.</p>
+                                <a href="pages/mortgage_calculator.html" class="btn btn-primary">Mortgage Calculator</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Card (Contact Us) -->
+                    <div class="col">
+                        <div class="card text-center">
+                            
+                            <div class="card-header text-center">
+                                Contact Us
+                            </div>
+
+                            <div class="card-body">
+                                <p class="card-text">Click on the button below to contact us.</p>
+                                <a href="pages/contact_us.html" class="btn btn-primary">Contact Us</a>
+                            </div>
+                    </div>
+        
+                </div>
+            </div>
+            
+        </div>
+        <!-- End of page body -->
+    </body>
 </html>
