@@ -8,13 +8,14 @@
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <script src="../bootstrap/js/bootstrap.bundle.min.js" ></script>
         <script src="../jquery/jquery-3.7.1.min.js"></script>
+        <script src="../jquery/jquery.validate.min.js"></script>
     </head>
 
     <body data-bs-theme="dark">      
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Bank</a>
+                <a class="navbar-brand" href="../index.html">Bank</a>
                 
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -47,6 +48,46 @@
         </nav>
         <!-- End of navbar -->
 
-        <!-- Body of page-->
+        <!-- Body of page -->
+        <main class="container">
+            <h1 class="text-center">Contact Us</h1>  
+            
+            <!-- Contact form -->
+            <form class="row justify-content-center border rounded-3 mx-auto" id="contactForm">
+                <h1 class="text-center">Contact Form</h1>
+                
+                <!-- Name field -->
+                <div class="mb-3">
+                    <label for="cantactFormName" class="form-label">Name</label>
+                    <input type="text" name="name" class="form-control" id="contactFormName" placeholder="Jashan">
+                </div>
+                
+                <!-- Email field -->
+                <div class="mb-3">
+                    <label for="contactFormEmail" class="form-label">Email</label>
+                    <input type="text" name="email" class="form-control" id="contactFormEmail" placeholder="name@example.com">
+                </div>
+
+                <!-- Subject field -->
+                <div class="mb-3">
+                    <label for="contactFormSubject" class="form-label">Subject</label>
+                    <input type="text" name="subject" class="form-control" id="contactFormSubject" >
+                </div>
+
+                <!-- Message field -->
+                <div class="mb-3">
+                    <label for="contactFormMessage" class="form-label">Message</label>
+                    <input type="text" name="message" class="form-control" id="contactFormMessage" placeholder="Enter message here.">
+                </div>
+                
+                <!-- Submit button -->
+                <div class="mb-3">
+                    <button type="submit" class="btn col-12">Submit</button>
+                </div>
+            
+            </form>
+        </main>
+        <!-- Own created scripts -->
+        <script src="../scripts/validation.js"></script>
     </body>
 </html>
